@@ -1,0 +1,214 @@
+// let str = `<div style="margin: auto; margin-bottom: 12px;">
+    //         <img style="border-radius: 7px;" src="Images/Logo.png" alt="Logo" width="50px">
+    //         <b style="position: relative; bottom: 9px;">Flexnest</b>
+    //     </div>
+
+
+    //     <!-- Month Heading -->
+    //     <div style="margin-bottom: 12px;">
+    //         ${name} month in review
+    //     </div>
+    //     <div style="margin-bottom: 12px;">
+    //         <b>${monthYear}</b>
+    //     </div>
+    //     <!-- Card Heading -->
+    //     <div style="background-color: black; margin: 15px; border-radius: 10px; padding: 35px;">
+    //         <div style="font-size:larger; margin: 0 40px 40px 40px;">
+    //             You Worked Out With Us ${WorkoutDays} Days This Month
+    //         </div>
+    //         <table style="margin: auto;" cellspacing="20" cellpadding="20">
+
+    //             <caption align="top">
+    //                 <!-- Here we have used the attribute
+	// 			that is style and we have colored
+	// 			the sentence to make it better
+	// 			depending on the web page-->
+    //             </caption>
+
+    //             <thead>
+    //                 <tr>
+    //                     <th>Mon</th>
+    //                     <th>Tue</th>
+    //                     <th>Wed</th>
+    //                     <th>Thu</th>
+    //                     <th>Fri</th>
+    //                     <th>sat</th>
+    //                     <th>Sun</th>
+    //                 </tr>
+    //             </thead>
+
+    //             <tbody>
+    //                 <tr>
+    //                     <td></td>
+    //                     <td></td>
+    //                     <td></td>
+    //                     <td></td>
+    //                     <td></td>
+    //                     <td>01</td>
+    //                     <td>02</td>
+    //                 </tr>
+    //                 <tr></tr>
+    //                 <tr>
+    //                     <td>03</td>
+    //                     <td style="background-color: rgb(206, 131, 33); border-radius: 40px;">04</td>
+    //                     <td>05</td>
+    //                     <td style="background-color: rgb(206, 131, 33); border-radius: 40px;">06</td>
+    //                     <td>07</td>
+    //                     <td>08</td>
+    //                     <td>09</td>
+    //                 </tr>
+    //                 <tr>
+    //                     <td>10</td>
+    //                     <td>11</td>
+    //                     <td>12</td>
+    //                     <td>13</td>
+    //                     <td>14</td>
+    //                     <td>15</td>
+    //                     <td>16</td>
+    //                 </tr>
+    //                 <tr>
+    //                     <td>17</td>
+    //                     <td>18</td>
+    //                     <td>19</td>
+    //                     <td>20</td>
+    //                     <td>21</td>
+    //                     <td>22</td>
+    //                     <td>23</td>
+    //                 </tr>
+    //                 <tr>
+    //                     <td>24</td>
+    //                     <td>25</td>
+    //                     <td>26</td>
+    //                     <td>27</td>
+    //                     <td>28</td>
+    //                     <td>29</td>
+    //                     <td>30</td>
+    //                 </tr>
+    //                 <tr>
+    //                     <td>31</td>
+    //                     <!-- <td>1</td>
+    //                     <td>2</td>
+    //                     <td>3</td>
+    //                     <td>4</td>
+    //                     <td>5</td>
+    //                     <td>6</td> -->
+    //                 </tr>
+    //             </tbody>
+    //         </table>
+    //         <div>
+    //             <img style="position: relative; top: 4px; border-radius: 60%; height: 20px; background-color: white;"
+    //                 src="Images/down-arrow.png" alt="Arrow" width="20px" />
+    //             This is ${fewerDays} fewer days than last month
+    //         </div>
+    //     </div>`
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+<div style="margin: auto; margin-bottom: 12px;">
+            <img style="border-radius: 7px;" src="Images/Logo.png" alt="Logo" width="50px">
+            <b style="position: relative; bottom: 9px;">Flexnest</b>
+        </div>
+
+
+        <!-- Month Heading -->
+        <div style="margin-bottom: 12px;">
+            ${name} month in review
+        </div>
+        <div style="margin-bottom: 12px;">
+            <b>${monthYear}</b>
+        </div>
+        <!-- Card Heading -->
+        <div style="background-color: black; margin: 15px; border-radius: 10px; padding: 35px;">
+            <div style="font-size:larger; margin: 0 40px 40px 40px;">
+                You Worked Out With Us ${WorkoutDays} Days This Month
+            </div>
+            <table style="margin: auto;" cellspacing="20" cellpadding="20">
+
+                <caption align="top">
+                    <!-- Here we have used the attribute
+				that is style and we have colored
+				the sentence to make it better
+				depending on the web page-->
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tableBody">
+                    <!-- <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>01</td>
+                        <td>02</td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td>03</td>
+                        <td style="background-color: rgb(206, 131, 33); border-radius: 40px;">04</td>
+                        <td>05</td>
+                        <td style="background-color: rgb(206, 131, 33); border-radius: 40px;">06</td>
+                        <td>07</td>
+                        <td>08</td>
+                        <td>09</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div>
+                <img style="position: relative; top: 4px; border-radius: 60%; height: 20px; background-color: white;"
+                    src="Images/down-arrow.png" alt="Arrow" width="20px" />
+                This is ${fewerDays} fewer days than last month
+            </div>
+        </div>
